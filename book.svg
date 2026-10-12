@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#111116"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+
+    <!-- Orange/Yellow Gradient for Inner Book & Pen Tip -->
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff9900"/>
+      <stop offset="100%" stop-color="#ff5500"/>
+    </linearGradient>
+
+    <!-- Cyan/Blue Gradient for Outer Book/Wings -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00bfff"/>
+      <stop offset="100%" stop-color="#0066cc"/>
+    </linearGradient>
+
+    <!-- Deep Blue for Bottom Wave -->
+    <linearGradient id="deepBlueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#001155"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="url(#bgGlow)"/>
+
+  <g transform="translate(0, 30)">
+    <!-- Central Pen Nib (Orange Part) -->
+    <path d="M 400 150 
+             L 445 230 
+             L 445 390 
+             L 400 440 
+             L 355 390 
+             L 355 230 Z" 
+          fill="url(#orangeGrad)"/>
+
+    <!-- Pen Nib Cutout / Inner Detail -->
+    <path d="M 400 230 
+             L 425 250 
+             L 425 380 
+             L 400 410 
+             L 375 380 
+             L 375 250 Z" 
+          fill="#000000"/>
+
+    <!-- Pen Nib Slit and Tip Circle -->
+    <line x1="400" y1="260" x2="400" y2="445" stroke="#000000" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="400" cy="465" r="9" fill="#000000"/>
+
+    <!-- Inner Open Book Pages (Orange) -->
+    <!-- Left Orange Page -->
+    <path d="M 390 515 
+             C 340 480, 290 350, 260 270 
+             L 360 270 
+             C 370 330, 380 400, 390 515 Z" 
+          fill="url(#orangeGrad)"/>
+
+    <!-- Right Orange Page -->
+    <path d="M 410 515 
+             C 460 480, 510 350, 540 270 
+             L 440 270 
+             C 430 330, 420 400, 410 515 Z" 
+          fill="url(#orangeGrad)"/>
+
+    <!-- Middle Divider Shadow/Space -->
+    <path d="M 395 515 L 400 535 L 405 515 L 400 470 Z" fill="#000000"/>
+
+    <!-- Outer Book Wings / Layers (Cyan / Light Blue) -->
+    <!-- Left Cyan Wing -->
+    <path d="M 400 575 
+             C 330 510, 260 420, 200 370 
+             L 200 440 
+             C 250 480, 310 530, 370 590 Z" 
+          fill="url(#blueGrad)"/>
+
+    <!-- Right Cyan Wing -->
+    <path d="M 400 575 
+             C 470 510, 540 420, 600 370 
+             L 600 440 
+             C 550 480, 490 530, 430 590 Z" 
+          fill="url(#blueGrad)"/>
+
+    <!-- Bottom Deep Blue Dynamic Base Wave / Sweep -->
+    <!-- Bottom Left Curve -->
+    <path d="M 400 615 
+             C 330 570, 250 530, 115 535 
+             C 170 575, 260 620, 375 635 Z" 
+          fill="url(#deepBlueGrad)"/>
+
+    <!-- Bottom Right Curve -->
+    <path d="M 400 615 
+             C 470 570, 550 530, 685 535 
+             C 630 575, 540 620, 425 635 Z" 
+          fill="url(#deepBlueGrad)"/>
+  </g>
+</svg>
