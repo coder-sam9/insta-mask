@@ -1,13 +1,12 @@
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useEffect, useState } from "react";
 import {
-    ActivityIndicator,
-    Image,
-    ScrollView,
-    StyleSheet,
-    Text,
-    TouchableOpacity,
-    View,
+  ActivityIndicator,
+  Image,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { api } from "../../services/api";
@@ -99,12 +98,12 @@ export default function DetailScreen() {
               </View>
             )} */}
 
-            <TouchableOpacity
+            {/* <TouchableOpacity
               style={styles.secondaryBtn}
               onPress={handleCuriosity}
             >
               <Text style={styles.secondaryText}>Know More</Text>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
         </View>
       </ScrollView>
